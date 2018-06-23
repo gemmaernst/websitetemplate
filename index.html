@@ -1,0 +1,57 @@
+---
+layout: default
+services:
+  - skill: web
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    image: image
+  - skill: social media
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    image: image
+  - skill: advertising
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    image: image
+
+---
+
+<!---ABOUT ME------>
+<section>
+  <h2>A Little Bit About Me</h2>
+  <div class="grid">
+    <div class="col-5">
+      <img src="" alt="">
+    </div>
+<!--ADD IMAGE OF ME HERE -->
+    <div class="col-7">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</section>
+
+<!--PARALLAX SCROLL SECTION-->
+<section class="parallax">
+
+</section>
+
+
+<!--SERVICES-->
+<section>
+  <h2>SERVICES</h2>
+{% for service in page.services %}
+  <div class="grid">
+    <div class="col-6 text">
+      <h3>
+      {{service.skill}}</h3>
+      <p>{{service.description}}</p>
+    </div>
+    <div class="col-6" style="background-image:url('{{service.image}}')">
+    </div>
+
+  </div>
+{% endfor %}
+
+</section>
+
+    <!--PARALLAX SCROLL SECTION-->
+<section class="parallax">
+
+</section>
