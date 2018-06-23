@@ -111,7 +111,9 @@ padding: 2%;
   background-repeat: no-repeat;
 }
 /* SPECIFIC CLASSES  */
-
+.gridflipper :nth-child(odd){
+  flex-direction: row-reverse;
+}
 
 .parallax {
 background-image: url("/images/plant.jpg");
