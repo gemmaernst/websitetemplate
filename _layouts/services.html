@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<section>
+  <div class="col-5 b1">
+    <div class="center">
+
+    <h2> What I Can Offer for {{page.title}}</h2>
+    <p></p>
+  </div>
+
+    {% for item in page.services %}
+      <hr>
+      <div class="grid-middle-center">
+        <div class="col-6_md-6 padding-grid">
+          <h3 class="center">{{item.name}}</h3>
+          <p>{{item.description}}
+    </p>
+        </div>
+        <div class="col-6 image champion-bg" style="background-image:url('{{item.image}}')"></div>
+      </div>
+          {% endfor %}
+</div>
+  </section>
+
+<section>
+  <div class="b2">
+      <div class="col-12">
+        <h2 class="center">Here's a taste of some of my favourites</h2>
+        <img src="" alt="">
+
+      </div>
+
+    <hr>
+
+
+  </div>
+</section>
+
+
+</html>

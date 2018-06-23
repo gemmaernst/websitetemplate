@@ -1,10 +1,209 @@
+/* UNIVERSAL RESET  */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+}
+
+a{
+  color: inherit;
+}
+
+:focus{
+  outline: 0;
+}
+
+
+/* GERNERIC STYLES */
+body{
+  font-family: 'Poiret One', cursive;
+}
+
+section {
+  padding: 1.5%;
+
+}
+
+
+/* HEADER */
+.header{
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header nav
+{
+  position: fixed;
+  right: 0%;
+  top:0%;
+  left: 0%;
+  color: white;
+  background-color: #eee7e1;
+  padding:2%;
+}
+
+/* HEADER NAVIGATION WORDS  */
+.header a{
+font-size: 20px;
+}
+
+
+
+hr{
+  margin: 5%;
+}
+/* TYPOGRAPHY  */
+
+h1{
+  color: grey;
+  font-size: 6rem;
+  text-align: center;
+}
+h3{
+  color: grey;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+
+h2{
+  padding:1.5%;
+
+}
+p{
+padding: 2%;
+letter-spacing: 0.8px;
+}
+
+
+/* HELPA CLASSES */
+
+.padding-top{
+  padding-top: 2%;
+}
+
+
+.center{
+  text-align:center;
+
+}
+
+.flexcenter{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.padding-grid{
+padding: 2%;
+}
+
+.image{
+  min-height: 50vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* SPECIFIC CLASSES  */
+
 
 .parallax {
-/* INSERT IMAGE HERE*/
-background-image: url("/img/flower.jpg");
-min-height: 500px;
+background-image: url("/images/plant.jpg");
+height: 30vh;
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+}
+
+.b1 {
+    background-color: #eadcd4;
+}
+
+.b2 {
+    background-color: #ede9d5;
+}
+
+.b3 {
+    background-color: #d2ddd0;
+}
+.b4 {
+    background-color: #eee7e1;
+}
+
+.rice-bg{
+background-image:url("/images/rice.png");
+}
+
+.champion-bg{
+background-image:url("/images/champion.png");
+}
+
+.shortlist-bg{
+background-image:url("/images/shortlist.png");
+}
+
+.debenhams-bg{
+background-image:url("/images/debenhams.png");
+}
+
+.me-bg{
+background-image:url("/images/me.jpg");
+}
+
+/* FOOTER */
+footer{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+padding:3%;
+}
+input,textarea,button{
+  display: block;width: 40%;
+  margin:0.5% auto;
+  padding: 0.5%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+button{
+  width: 20%;
+}
+
+
+.dropdown-nav {
+  position:relative;
+  padding: 10px 0.7%;
+}
+
+
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    left:10px;
+    padding:1px;
+    top: 33px;
+}
+
+.dropdown-content a {
+  display:block;
+  background-color: #eadcd5;
+  padding:5px 15px;
+  text-align:left;
+  white-space:nowrap;
 }
